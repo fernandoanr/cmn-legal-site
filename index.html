@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calcule Minhas Notas (CMN)</title>
+<meta name="description" content="Documentos legais e suporte do aplicativo Calcule Minhas Notas (CMN).">
+<meta name="robots" content="index, follow">
+<style>
+  :root {
+    --bg: #FAFAF7; --card: #FFFFFF; --border: #E5E3DB;
+    --text: #191717; --muted: #5C5A55; --subtle: #94918A;
+    --brand: #4F46E5; --brand-text: #4338CA; --brand-soft: #EEF0FF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0B0B12; --card: #14141D; --border: #26263A;
+      --text: #F5F5F4; --muted: #A1A0A8; --subtle: #6B6A74;
+      --brand: #7C84F7; --brand-text: #9AA4FB; --brand-soft: #1B1B33;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0; min-height: 100vh; background: var(--bg); color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Helvetica, Arial, sans-serif;
+    line-height: 1.55;
+  }
+  main { width: min(820px, 100%); margin: 0 auto; padding: 64px 22px 80px; }
+  .brand { display: flex; align-items: center; gap: 14px; margin-bottom: 28px; }
+  .logo {
+    width: 52px; height: 52px; border-radius: 15px;
+    background: linear-gradient(135deg, var(--brand), #7C84F7);
+    color: #fff; font-weight: 700; font-size: 20px; letter-spacing: .5px;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .app { font-weight: 650; }
+  .app small { display: block; margin-top: 2px; color: var(--subtle); font-size: 13px; font-weight: 400; }
+  h1 { font-size: clamp(30px, 6vw, 44px); line-height: 1.12; margin: 0 0 14px; letter-spacing: -.03em; }
+  .intro { max-width: 640px; color: var(--muted); font-size: 18px; margin: 0 0 34px; }
+  nav { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+  .card {
+    display: block; min-height: 164px; padding: 22px; border: 1px solid var(--border);
+    border-radius: 16px; background: var(--card); color: var(--text); text-decoration: none;
+    transition: transform .16s ease, border-color .16s ease;
+  }
+  .card:hover, .card:focus-visible { transform: translateY(-2px); border-color: var(--brand); outline: none; }
+  .card strong { display: block; font-size: 18px; margin-bottom: 8px; }
+  .card span { color: var(--muted); font-size: 15px; }
+  .card em { display: block; color: var(--brand-text); font-size: 14px; font-style: normal; margin-top: 18px; }
+  footer { margin-top: 46px; padding-top: 20px; border-top: 1px solid var(--border); color: var(--subtle); font-size: 14px; }
+  footer a { color: var(--brand-text); text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+  @media (max-width: 700px) {
+    main { padding-top: 38px; }
+    nav { grid-template-columns: 1fr; }
+    .card { min-height: 0; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <div class="brand">
+    <div class="logo">CMN</div>
+    <div class="app">Calcule Minhas Notas<small>com.calculeminhasnotas.app</small></div>
+  </div>
+  <h1>Documentos e suporte</h1>
+  <p class="intro">Consulte os documentos legais do CMN ou encontre ajuda para usar o aplicativo e gerenciar sua conta.</p>
+  <nav aria-label="Documentos e suporte">
+    <a class="card" href="/privacidade">
+      <strong>Política de Privacidade</strong>
+      <span>Como o CMN trata seus dados e protege seus direitos.</span>
+      <em>Acessar →</em>
+    </a>
+    <a class="card" href="/termos">
+      <strong>Termos de Uso</strong>
+      <span>Regras, responsabilidades e condições de uso do aplicativo.</span>
+      <em>Acessar →</em>
+    </a>
+    <a class="card" href="/suporte">
+      <strong>Suporte</strong>
+      <span>Ajuda, contato e instruções para excluir sua conta e seus dados.</span>
+      <em>Acessar →</em>
+    </a>
+  </nav>
+  <footer>
+    © 2026 Calcule Minhas Notas (CMN) · <a href="mailto:calculeminhasnotas@gmail.com">calculeminhasnotas@gmail.com</a>
+  </footer>
+</main>
+</body>
+</html>

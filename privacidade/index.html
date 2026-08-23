@@ -91,7 +91,7 @@
 
   <h2>3. Quais dados tratamos</h2>
   <h3>3.1. Dados que ficam apenas no seu aparelho (sem login)</h3>
-  <p>Enquanto você não cria conta, os dados abaixo são gravados <strong>localmente</strong> (banco SQLite e preferências do sistema) e <strong>não saem do dispositivo</strong>:</p>
+  <p>Enquanto você não cria conta, os dados abaixo são gravados <strong>localmente</strong> (banco de dados do aparelho e preferências do sistema) e <strong>não saem do dispositivo</strong>:</p>
   <ul>
     <li><strong>Dados acadêmicos que você insere:</strong> nomes de disciplinas, códigos, ano, período letivo, instituição, categorias de avaliação, pesos, notas, sistema de notas (numérico ou conceitual), nota de aprovação e metas.</li>
     <li><strong>Perfil local:</strong> nome de exibição e instituição (opcionais).</li>
@@ -106,7 +106,7 @@
     <li><strong>Dados de autenticação:</strong> endereço de e-mail e códigos de verificação de uso único (OTP) enviados por e-mail; um <strong>identificador de usuário</strong> (UUID) gerado para a sua conta.</li>
     <li><strong>Perfil na nuvem (opcional):</strong> nome de exibição, instituição, idioma e tema.</li>
     <li><strong>Dados acadêmicos sincronizados:</strong> as disciplinas e tudo que elas contêm (categorias, pesos, notas, metas, etc.), além de <strong>carimbos de data/hora</strong> de atualização e de exclusão necessários para a sincronização entre aparelhos.</li>
-    <li><strong>Dados de controle do Premium:</strong> indicador de assinante (<code>is_premium</code>), origem/identificador do produto, data de expiração do benefício e contador semanal de uso do recurso "Atingir Meta".</li>
+    <li><strong>Dados de controle do Premium:</strong> indicador de assinante, origem/identificador do produto, data de expiração do benefício e contador semanal de uso do recurso "Atingir Meta".</li>
   </ul>
 
   <h3>3.3. Dados de compra (quando o CMN Premium estiver disponível)</h3>
@@ -169,7 +169,7 @@
   <p>Adotamos medidas técnicas e organizacionais razoáveis, entre elas:</p>
   <ul>
     <li>comunicação criptografada via <strong>HTTPS/TLS</strong>;</li>
-    <li><strong>isolamento por usuário</strong> no banco de dados (Row Level Security), de modo que cada conta acessa apenas os próprios dados;</li>
+    <li><strong>isolamento por conta</strong> no banco de dados, de modo que cada conta acessa apenas os próprios dados;</li>
     <li>a <strong>sandbox</strong> do sistema operacional para os dados locais do aparelho;</li>
     <li>chaves administrativas/secretas mantidas <strong>apenas no servidor</strong>, nunca no App.</li>
   </ul>
